@@ -1,0 +1,4 @@
+<h1>welcome, <%=current_user.email%></h1>
+<p>If you're not <%= current_user.email%>, do you want to <%=link_to("Sign Out", "/users/sign_out", :method => "delete")%></p>
+
+

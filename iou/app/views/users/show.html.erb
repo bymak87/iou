@@ -1,4 +1,8 @@
 <h1>welcome, <%=current_user.email%></h1>
 <p>If you're not <%= current_user.email%>, do you want to <%=link_to("Sign Out", "/users/sign_out", :method => "delete")%></p>
 
+<%=link_to("New Event", "/users/#{current_user.id}/events/new")%>
+
+<p>See all events <%= link_to("Show All Events", "/users/#{current_user.id}/events")%></p>
+
 

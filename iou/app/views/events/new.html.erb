@@ -1,0 +1,12 @@
+<h1>Create New Event</h1>
+
+<%=form_tag "/users/#{current_user.id}/events", :method => "post" do %>
+<%=label_tag "Name" %>
+<%=text_field_tag :name %>
+<%=label_tag "Date" %>
+<%=text_field_tag :pay_date %>
+<%=label_tag "Friend" %>
+<%=text_field_tag :friend %>
+<%=submit_tag "Submit" %>
+
+<% end %>

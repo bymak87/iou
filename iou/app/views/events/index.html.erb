@@ -1,6 +1,8 @@
 <h1>All Events</h1>
-
+<!-- Need to change it to show events for current user, showing all right now -->
 <ul>
 <% @events.each do |event| %>
 <li><%=event.name%>: <%=event.pay_date%> </li>
 <% end %>
+
+

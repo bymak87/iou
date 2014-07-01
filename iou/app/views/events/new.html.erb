@@ -3,10 +3,14 @@
 <%=form_tag "/users/#{current_user.id}/events", :method => "post" do %>
 <%=label_tag "Name" %>
 <%=text_field_tag :name %>
-<%=label_tag "Date" %>
+<%=label_tag "Date", nil, class: "date" %>
 <%=text_field_tag :pay_date %>
 <%=label_tag "Friend" %>
 <%=text_field_tag :friend %>
+<%=label_tag "Amount" %>
+<%=text_field_tag :amount %>
+
+
 <%=submit_tag "Submit" %>
 
 <% end %>

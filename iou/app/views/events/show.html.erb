@@ -1,3 +1,6 @@
 <H1><%= @event.name%></H1>
 <h3><%= @event.pay_date%></h3>
+<h3><%= @event.friend%></h3>
+<h3><%= @event.amount%></h3>
+<h3><%= @event.status%></h3> <%=link_to("Mark as Paid", events_paid_path(:event_id => @event.id), :method => "post")%>
 

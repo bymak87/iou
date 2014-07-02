@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.create(:name => params[:name], :pay_date => params[:pay_date], :friend=> params[:friend], :amount=> params[:amount], :status=>"pending")
+    @event = Event.create(:user_id=> current_user.id, :name => params[:name], :pay_date => params[:pay_date], :friend=> params[:friend], :amount=> params[:amount], :status=>"pending")
     redirect_to "/users/#{current_user.id}/events/#{@event.id}"
 
   end
@@ -23,6 +23,6 @@ class EventsController < ApplicationController
   end
 
   def index
-    @events = Event.all
+    @events = current_user.events
   end
 end

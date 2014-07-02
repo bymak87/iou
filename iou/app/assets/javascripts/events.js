@@ -1,4 +1,3 @@
-$(document).ready(function(){
+$(document).on('ready page:load',function(){
   $('#pay_date').datepicker();
-  console.log("its working!")
-});
+  });

@@ -1,8 +1,8 @@
-<h1>All Events</h1>
-<!-- Need to change it to show events for current user, showing all right now -->
+<h1>All My Events</h1>
+
 <ul>
 <% @events.each do |event| %>
 <li><%=event.name%>: <%=event.pay_date%> </li>
 <% end %>
 
-
+<p><%= link_to("Dashboard","/users/#{current_user.id}")%></p>

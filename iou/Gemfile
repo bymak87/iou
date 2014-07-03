@@ -4,6 +4,7 @@ gem 'dotenv-rails'
 gem 'pry-debugger'
 gem 'hirb'
 gem 'devise'
+gem 'foundation-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'

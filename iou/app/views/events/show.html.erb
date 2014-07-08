@@ -1,8 +1,46 @@
-<H1><%= @event.name%></H1>
-<h3><%= @event.pay_date%></h3>
-<h3><%= @event.friend%></h3>
-<h3><%= @event.amount%></h3>
-<h3><%= @event.status%></h3> <%=link_to("Mark as Paid", events_paid_path(:event_id => @event.id), :method => "post")%>
+<% if flash[:created] %>
+<div class="white"> <%= flash[:created] %> </div>
+<% end %>
 
-<p><%= link_to("Dashboard","/users/#{current_user.id}")%></p>
+<H1 class="title">Event</H1>
+
+
+  <div class="fixed">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1><a href="#">IOU</a></h1>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><%= link_to("Dashboard","/users/#{current_user.id}")%></li>
+      <li class="divider"></li>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="small-8 small-centered columns">
+<table class="responsive">
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Friend</th>
+    <th>Amount</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td><%= @event.name%></td>
+    <td><%= @event.pay_date%></td>
+    <td><%= @event.friend%></td>
+    <td><%= @event.amount%></td>
+    <td><%= @event.status%></td>
+</table>
+<br />
+<%=link_to("Mark as Paid", events_paid_path(:event_id => @event.id), :method => "post", class: "button radius") %>
+
+</div>
+
 

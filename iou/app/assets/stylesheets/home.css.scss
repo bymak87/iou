@@ -1,3 +1,36 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image:url(http://wp.1920x1080.org/wp-content/uploads/2011/11/background-desktop-pictures-990250602.jpg);
+
+}
+.notebook{
+  background-image:url(http://bgfons.com/upload/notebook_texture2466.jpg);
+  height: 500px;
+}
+
+.title{
+  // color: #158cba;
+  color:white;
+  font-family: 'Pacifico', cursive;
+}
+.head{
+  font-family: 'Pacifico', cursive;
+}
+.white{
+  color:white;
+}
+.out{
+  color:white;
+}
+.filler{
+  margin-top: 50%;
+}
+.page{
+  text-align: center;
+  position: relative;
+  top: 50px;
+
+}

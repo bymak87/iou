@@ -30,9 +30,9 @@
 // $include-print-styles: true;
 // $include-html-global-classes: $include-html-classes;
 
-// Grid 
+// Grid
 
-// $include-html-block-grid-classes: $include-html-classes; 
+// $include-html-block-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
@@ -46,6 +46,7 @@
 
 // We use these to control various global styles
 // $body-bg: #fff;
+//$body-background-image: url('./../images/notebook.jpg') ;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -76,7 +77,7 @@
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
 
-// $column-gutter: rem-calc(30);
+$column-gutter: rem-calc(60px);
 
 // Media Query Ranges
 // $small-range: (0em, 40em);
@@ -836,6 +837,7 @@
 
 // $panel-header-adjust: true;
 // $callout-panel-link-color: $primary-color;
+$panel-width: 50%;
 
 // Pricing Tables
 
@@ -1186,12 +1188,12 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+ $topbar-bg-color: #2f2f2f;
+ $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
-// $topbar-margin-bottom: 0;
+ $topbar-height: 45px;
+ $topbar-margin-bottom: 15px;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
@@ -1207,12 +1209,12 @@
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
+ $topbar-link-color: #158cba;
+ $topbar-link-color-hover: #158cba;
+ $topbar-link-color-active: #158cba;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+ $topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-color-hover: #555555;
@@ -1236,10 +1238,10 @@
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
-// $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+ $topbar-menu-link-color: #158cba;
+ $topbar-menu-icon-color: #158cba;
+ $topbar-menu-link-color-toggled: #158cba;
+ $topbar-menu-icon-color-toggled: #158cba;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;

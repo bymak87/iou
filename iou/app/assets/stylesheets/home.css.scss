@@ -7,7 +7,7 @@ body {
 
 }
 .notebook{
-  background-image:url(http://bgfons.com/upload/notebook_texture2466.jpg);
+  background-image:url(http://th03.deviantart.net/fs71/PRE/i/2012/206/7/a/lined_paper_10_by_purpledragon42_stock-d58ljbk.png);
   height: 500px;
 }
 
@@ -26,11 +26,30 @@ body {
   color:white;
 }
 .filler{
-  margin-top: 50%;
+  margin-top: 25%;
 }
 .page{
-  text-align: center;
+
   position: relative;
-  top: 50px;
+  top: 65px;
+  left: 25%;
 
 }
+.mid{
+  position:absolute;
+     width:500px;
+     height:100%;
+     top:50%;
+     left:50%;
+     margin:-100px 0 0 -150px;
+
+}
+
+.bf{
+  font-size:2em;
+}
+
+#myList{
+
+}
+

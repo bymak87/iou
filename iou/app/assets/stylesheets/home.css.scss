@@ -31,7 +31,7 @@ body {
 
   position: relative;
   top: 65px;
-  left: 25%;
+  left: 15%;
 
 }
 .mid{
@@ -55,5 +55,15 @@ body {
 .bullet{
   font-family: 'Shadows Into Light', cursive;
   font-size: 1.5rem;
+}
+
+.cen{
+  position: relative;
+  left: 25%;
+}
+.butts{
+  position: relative;
+  padding-left: 25%;
+  padding-top:5%;
 }
 

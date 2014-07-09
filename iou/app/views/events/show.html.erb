@@ -28,7 +28,6 @@
 <H1 class="title animated bounceIn">IOU Details</H1>
 <div class="mid">
     <ul id="myList" class="white bf">
-
       <li>Name : <%= @event.name%></li>
       <li>Date : <%= @event.pay_date%></li>
       <li>Friend : <%= @event.friend%></li>
@@ -36,6 +35,8 @@
       <li>Status : <%= @event.status%></li>
     </ul>
   <%=link_to("Mark IOU as Paid", events_paid_path(:event_id => @event.id), :method => "post", class: "button radius") %>
+
+  <%=link_to("Remind Me", events_paid_path(:event_id => @event.id), :method => "post", class: "button radius") %>
 
 <br />
 

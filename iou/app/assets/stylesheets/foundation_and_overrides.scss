@@ -48,7 +48,7 @@
 // $body-bg: #fff;
 //$body-background-image: url('./../images/notebook.jpg') ;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $body-font-family: 'Raleway', sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -1235,9 +1235,9 @@ $panel-width: 50%;
 // $topbar-dropdown-label-bg: #333;
 
 // Top menu icon styles
-// $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: rem-calc(13);
-// $topbar-menu-link-weight: $font-weight-bold;
+ $topbar-menu-link-transform: uppercase;
+ $topbar-menu-link-font-size: rem-calc(13);
+ //$topbar-menu-link-weight: $font-weight-bold;
  $topbar-menu-link-color: #158cba;
  $topbar-menu-icon-color: #158cba;
  $topbar-menu-link-color-toggled: #158cba;

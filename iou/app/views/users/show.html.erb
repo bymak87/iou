@@ -10,7 +10,7 @@
 
   </nav>
 </div>
-<div class="small-12 small-centered columns">
+<div class="small-12 small-centered columns scooch">
 <title>Welcome</title>
   <h1 class="title">Welcome, <%=current_user.first_name%>!</h1>
   <h5 class="out right">I am not <%= current_user.first_name%>. I want to <%=link_to("Sign Out", "/users/sign_out", :method => "delete")%></h5>
@@ -24,7 +24,7 @@
       <h2 class="head">Events</h2>
       <br />
     <% current_user.events.each do |event| %>
-        <li><%=event.name.capitalize%>: <%=event.friend%> </li>
+        <li class="bullet"><%=event.name.capitalize%>: <%=event.friend%> </li>
         <br />
     <% end %>
     </div>

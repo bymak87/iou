@@ -1,8 +1,7 @@
-<% if flash[:created] %>
-<div class="white"> <%= flash[:created] %> </div>
-<% end %>
-
 <title>IOU Details</title>
+
+
+
 
 
   <div class="fixed">
@@ -26,6 +25,9 @@
 
 
 <H1 class="title animated bounceIn">IOU Details</H1>
+<% if flash[:created] %>
+<div class="white"> <%= flash[:created] %> </div>
+<% end %>
 <div class="mid">
     <ul id="myList" class="white bf">
       <li>Name : <%= @event.name%></li>

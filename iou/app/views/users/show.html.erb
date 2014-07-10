@@ -20,13 +20,13 @@
   <h1 class="title">Welcome, <%=current_user.first_name%>!</h1>
 </div>
 <div class="butts">
-  <%=link_to("Create New Event", "/users/#{current_user.id}/events/new", class: "button success radius")%>
-  <%= link_to("Show Event Details", "/users/#{current_user.id}/events", class: "button radius")%>
+  <%=link_to("Create New IOU", "/users/#{current_user.id}/events/new", class: "button success radius")%>
+  <%= link_to("Show IOU Details", "/users/#{current_user.id}/events", class: "button radius")%>
 </div>
   <div class="notebook small-6 small-centered columns">
 
     <div class="page">
-      <h2 class="head">Events</h2>
+      <h2 class="head">IOUs</h2>
       <br />
     <% current_user.events.each do |event| %>
         <li class="bullet"><%=event.name.capitalize%>: <%=event.friend%> </li>

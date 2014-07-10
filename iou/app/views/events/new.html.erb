@@ -27,14 +27,14 @@
 </div>
 
 <div class="small-12 columns">
-  <h1 class="title">Create New Event</h1>
+  <h1 class="title">Create New IOU</h1>
 </br>
 </br>
 </br>
 
 <div class=" small-5 columns small-centered panel">
 <%=form_tag "/users/#{current_user.id}/events", :method => "post" do %>
-<%=label_tag "Event Name" %>
+<%=label_tag "Event name" %>
 <%=text_field_tag :name %>
 <%=label_tag "Date", nil, class: "date" %>
 <%=text_field_tag :pay_date %>

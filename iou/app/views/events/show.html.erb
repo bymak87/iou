@@ -38,7 +38,7 @@
     </ul>
   <%=link_to("Mark IOU as Paid", events_paid_path(:event_id => @event.id), :method => "post", class: "button radius") %>
 
-  <%=link_to("Remind Me", events_paid_path(:event_id => @event.id), :method => "post", class: "button radius") %>
+  <%=link_to("Remind Me", events_remind_path(:event_id => @event.id), :method =>"post", class: "button radius") %>
 
 <br />
 

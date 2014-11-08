@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'dotenv'
+gem 'dotenv-rails'
 gem 'twilio-ruby', '~> 3.11'
 gem 'dotenv-rails'
 gem 'pry-byebug' #debugger no longer works

@@ -173,7 +173,6 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
-  dotenv
   dotenv-rails
   foundation-rails
   hirb

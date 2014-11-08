@@ -17,6 +17,7 @@ class EventsController < ApplicationController
     auth_token = ENV['TOKEN']
     from = ENV['FROM']
 
+
     # set up a client to talk to the Twilio REST API
     @client = Twilio::REST::Client.new account_sid, auth_token
 
@@ -34,7 +35,7 @@ class EventsController < ApplicationController
   def remind
     account_sid = ENV['SID']
     auth_token = ENV['TOKEN']
-
+    from = ENV['FROM']
     @id = params[:event_id]
     @event = Event.find(@id)
 
@@ -59,14 +60,14 @@ class EventsController < ApplicationController
 
     account_sid = ENV['SID']
     auth_token = ENV['TOKEN']
-
+    from = ENV['FROM']
     # set up a client to talk to the Twilio REST API
     @client = Twilio::REST::Client.new account_sid, auth_token
 
     #send text
     @client.account.messages.create(
     :from => from,
-    :to => "+1#{current_user.cellphone}", #current_user.cellphone
+    :to => "+1#{current_user.cellphone}",
     :body => "You have paid off your IOU with #{@event.friend}."
   )
     redirect_to "/users/#{current_user.id}/events/#{@event.id}"

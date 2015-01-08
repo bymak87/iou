@@ -51,6 +51,7 @@ class EventsController < ApplicationController
     redirect_to "/users/#{current_user.id}/events/#{@event.id}"
   end
 
+
   def paid
 
     @id = params[:event_id]

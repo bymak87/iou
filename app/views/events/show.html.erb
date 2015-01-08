@@ -1,9 +1,4 @@
 <title>IOU Details</title>
-
-
-
-
-
   <div class="fixed">
   <nav class="top-bar" data-topbar>
     <ul class="title-area">
@@ -36,8 +31,17 @@
       <li>Amount : <%= @event.amount%></li>
       <li>Status : <%= @event.status%></li>
     </ul>
-  <%=link_to("Mark IOU as Paid", events_paid_path(:event_id => @event.id), :method => "post", class: "button radius") %>
+  <%=link_to_if(@event.status == "pending","Mark IOU as Paid", events_paid_path(:event_id => @event.id), :method => "post", class: "button radius") %>
+  <br>
 
+<select class="resp">
+  <option value="1day">1 Day</option>
+  <option value="1hour">1 Hour</option>
+  <option value="3hour">3 Hours</option>
+  <option value="6hour">6 Hours</option>
+  <option value="12hour">12 Hours</option>
+</select>
+<br>
   <%=link_to("Remind Me", events_remind_path(:event_id => @event.id), :method =>"post", class: "button radius") %>
 
 <br />

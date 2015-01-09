@@ -35,11 +35,11 @@
   <br>
 
 <select class="resp">
-  <option value="1day">1 Day</option>
-  <option value="1hour">1 Hour</option>
-  <option value="3hour">3 Hours</option>
-  <option value="6hour">6 Hours</option>
-  <option value="12hour">12 Hours</option>
+  <option value="24">1 Day</option>
+  <option value="1">1 Hour</option>
+  <option value="3">3 Hours</option>
+  <option value="6">6 Hours</option>
+  <option value="12">12 Hours</option>
 </select>
 <br>
   <%=link_to("Remind Me", events_remind_path(:event_id => @event.id), :method =>"post", class: "button radius") %>
